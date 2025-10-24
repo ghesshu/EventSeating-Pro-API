@@ -34,4 +34,8 @@ app.get("/", (req, res) => {
   res.send("Event Seating Pro API");
 });
 
+app.get("/healthy", (req, res) => {
+  res.send("Healthy");
+});
+
 StartServer(app);
