@@ -30,4 +30,8 @@ app.use("/api", userRoute);
 app.use("/api", tableRoute);
 app.use("/api", guestRoute);
 
+app.get("/", (req, res) => {
+  res.send("Event Seating Pro API");
+});
+
 StartServer(app);
